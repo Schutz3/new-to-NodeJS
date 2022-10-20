@@ -34,7 +34,34 @@ console.log(cekUser(name, umur, DOB, punyaKTP));
 
 console.log("\n=====================================\n");
 
+//Arrow Function
+const cekUserV2 = (userName, userAge, userDOB, userKTP) => {
+    //Local Variables
+    let KTP;
+    if (userKTP == true){
+        KTP = "punya";
+    }else{
+        KTP = "tidak punya";
+    }
 
+    return "Nama saya adalah " + userName + "\ndan saya berumur " + userAge + " tahun.\nSaya lahir pada tanggal " + userDOB + "\ndan saya " + KTP + " KTP. ("+ userKTP +")";
+}
+
+const sum = (a, b) => a + b;
+const mutliply = (a, b) => a * b;
+const divide = (a, b) => a / b;
+const substract = (a, b) => a - b;
+const addOne = (a) => a + 1;
+const randFunc = () => Math.random();
+
+console.log(cekUserV2(name, umur, DOB, punyaKTP));  
+console.log(addOne(2));
+console.log(sum(6, 9));
+console.log(addOne(sum(6, 9)));
+console.log(randFunc());
+
+
+console.log("\n=====================================\n");
 
 
 
