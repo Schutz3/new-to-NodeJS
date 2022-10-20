@@ -90,6 +90,7 @@ person.greeting();
 
 console.log("\n=====================================\n");
 //Playing With Array
+//THIS IS CONST SEE AT LINE 3
 const hobbies = ['Membaca', 'Menulis', 'Menggambar', 'Mendengarkan Musik', 'Bermain Game'];
 for (let hobby of hobbies){
     console.log(hobby);
@@ -100,6 +101,17 @@ console.log(hobbies.map(hobby => 'Hobby: ' + hobby));
 console.log(hobbies);
 
 console.log("\n=====================================\n");
+//Playing With Array Object Refrence Types
+
+hobbies.push('Perogremming');
+console.log(hobbies);
+
+//THIS IS LET SEE AT LINE 5
+let judulBuku = ['Harry Potter', 'The Hobbit', 'The Lord of the Rings', 'The Silmarillion', 'The Chronicles of Narnia'];
+console.log(judulBuku);
+judulBuku.push('The Hobbit');
+judulBuku.push('The Lord of the Rings');
+console.log(judulBuku);
 
 
 
