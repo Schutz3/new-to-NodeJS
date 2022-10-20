@@ -151,7 +151,74 @@ const [Book1, Book2] = judulBuku;
 console.log(Book1, Book2);
 
 console.log("\n=====================================\n");
-//Playing With Object Copying
+//Async Code Promises
+//LEL
+const fetchData = () => {
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('HaCkInG NASA On PrOgReSs');
+        }, 1500);
+    });
+    return promise;
+    }; 
+
+
+setTimeout(() => {
+    console.log('InJeCtInG ViRuS To NASA');
+    fetchData()
+    .then(text => {
+        console.log(text + ' 10%');
+        return fetchData();
+    })
+    .then(text2 => {
+        console.log(text2 + ' 20%');
+        return fetchData();
+    })
+    .then(text3 => {
+        console.log(text3 + ' 30%');
+        return fetchData();
+    })
+    .then(text4 => {
+        console.log(text4 + ' 40%');
+        return fetchData();
+    })
+    .then(text5 => {
+        console.log(text5 + ' 50%');
+        return fetchData();
+    })
+    .then(text6 => {
+        console.log(text6 + ' 60%');
+        return fetchData();
+    })
+    .then(text7 => {
+        console.log(text7 + ' 70%');
+        return fetchData();
+    })
+    .then(text8 => {
+        console.log(text8 + ' 80%');
+        return fetchData();
+    })
+    .then(text9 => {
+        console.log(text9 + ' 90%');
+        return fetchData();
+    })
+    .then(text10 => {
+        console.log(text10 + ' 100% \nHaCkInG SuCcEsS');
+        return fetchData();
+    })
+    .then(text11 => {
+        console.log("\n=====================================\n");
+    })
+
+}, 2000); 
+
+console.log("Hello "+nama+" Staring To Hack Nasa");
+
+
+
+// setTimeout(() => {
+//     console.log('NASA Hacked');
+// }, 6000);
 
 
 
