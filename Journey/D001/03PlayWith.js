@@ -63,6 +63,34 @@ console.log(randFunc());
 
 console.log("\n=====================================\n");
 
+const person = {
+    name: 'Farhan',
+    age: 20,
+    DOB: '2002-10-04',
+
+    // 1st Method
+    // greeting: function() {
+    //     cconsole.log("Nama saya adalah " + this.name + "\ndan saya berumur " + this.age + " tahun.\nSaya lahir pada tanggal " + this.DOB);
+    // }
+
+    // 2nd Method
+    greeting() {
+        console.log("Nama saya adalah " + this.name + "\ndan saya berumur " + this.age + " tahun.\nSaya lahir pada tanggal " + this.DOB);
+    }
+    
+
+
+};
+
+console.log(person);
+
+console.log(person.name);
+
+person.greeting();
+
+console.log("\n=====================================\n");
+
+
 
 
 
