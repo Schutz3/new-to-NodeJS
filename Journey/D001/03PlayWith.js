@@ -62,7 +62,7 @@ console.log(randFunc());
 
 
 console.log("\n=====================================\n");
-
+//Playing With Object
 const person = {
     name: 'Farhan',
     age: 20,
@@ -89,6 +89,19 @@ console.log(person.name);
 person.greeting();
 
 console.log("\n=====================================\n");
+//Playing With Array
+const hobbies = ['Membaca', 'Menulis', 'Menggambar', 'Mendengarkan Musik', 'Bermain Game'];
+for (let hobby of hobbies){
+    console.log(hobby);
+}
+
+
+console.log(hobbies.map(hobby => 'Hobby: ' + hobby));
+console.log(hobbies);
+
+console.log("\n=====================================\n");
+
+
 
 
 
