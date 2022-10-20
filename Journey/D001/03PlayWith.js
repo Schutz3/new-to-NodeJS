@@ -113,6 +113,27 @@ judulBuku.push('The Hobbit');
 judulBuku.push('The Lord of the Rings');
 console.log(judulBuku);
 
+console.log("\n=====================================\n");
+//Playing Spread Rest Operators
+
+const copiedArray1 = judulBuku.slice();
+console.log(copiedArray1);
+//OR
+const copiedArray2 = [...judulBuku];
+console.log(copiedArray2);
+
+const toArray = (...args) => {
+    return args;
+};
+
+console.log(toArray( 1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+
+console.log(toArray( name, midname, umur,));
+
+console.log("\n=====================================\n");
+
+
+
 
 
 
