@@ -214,8 +214,6 @@ setTimeout(() => {
 
 console.log("Hello "+nama+" Staring To Hack Nasa");
 
-
-
 // setTimeout(() => {
 //     console.log('NASA Hacked');
 // }, 6000);
