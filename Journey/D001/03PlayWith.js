@@ -1,9 +1,11 @@
 //Global Variables
-var name = 'Farhan';
+let name = 'Farhan';
+//Const = Var Tetap
 const midname = 'Dwi';
-var umur = 20;
-var DOB = "2002-10-04";
-var punyaKTP = true;
+//Let = Var yang bisa diubah
+let umur = 20;
+let DOB = "2002-10-04";
+let punyaKTP = true;
 
 //Output nama / name
 console.log(name +" "+ midname +"\n"+ umur +"\n"+ DOB);
@@ -12,7 +14,7 @@ console.log("\n=====================================\n");
 
 function cekUser(userName, userAge, userDOB, userKTP){
     //Local Variables
-    var KTP;
+    let KTP;
     if (userKTP == true){
         KTP = "punya";
     }else{
@@ -25,6 +27,14 @@ function cekUser(userName, userAge, userDOB, userKTP){
 console.log(cekUser(name, umur, DOB, punyaKTP));
 
 console.log("\n=====================================\n");
+
+punyaKTP = false;
+
+console.log(cekUser(name, umur, DOB, punyaKTP));
+
+console.log("\n=====================================\n");
+
+
 
 
 
