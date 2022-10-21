@@ -33,14 +33,18 @@ const reqHandler = (req, res) => {
     res.end();  
 };
 // 1st Way: Exporting the module
- module.exports = reqHandler;
+//  module.exports = reqHandler;
 
 // 2nd Way: Exporting the module
  module.exports =  {
-    handler: reqHandler,
-    someText: 'Some hard coded text'
-};
+    // handler: reqHandler,
+    // someText: 'Some hard coded text'
+    };
 
  // 3rd Way: Exporting the module
-    module.exports.handler = reqHandler;
-    module.exports.someText = 'Some hard coded text';
+    // module.exports.handler = reqHandler;
+    // module.exports.someText = 'Some hard coded text';
+
+// 4th Way: Exporting the module
+    exports.handler = reqHandler;
+    exports.someText = 'Some hard coded text';
