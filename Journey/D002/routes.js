@@ -36,10 +36,10 @@ const reqHandler = (req, res) => {
 //  module.exports = reqHandler;
 
 // 2nd Way: Exporting the module
- module.exports =  {
+//  module.exports =  {
     // handler: reqHandler,
     // someText: 'Some hard coded text'
-    };
+    // };
 
  // 3rd Way: Exporting the module
     // module.exports.handler = reqHandler;
