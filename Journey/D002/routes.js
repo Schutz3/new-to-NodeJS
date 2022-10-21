@@ -32,5 +32,15 @@ const reqHandler = (req, res) => {
     res.write('</html>');
     res.end();  
 };
-
+// 1st Way: Exporting the module
  module.exports = reqHandler;
+
+// 2nd Way: Exporting the module
+ module.exports =  {
+    handler: reqHandler,
+    someText: 'Some hard coded text'
+};
+
+ // 3rd Way: Exporting the module
+    module.exports.handler = reqHandler;
+    module.exports.someText = 'Some hard coded text';
