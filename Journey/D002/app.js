@@ -1,22 +1,17 @@
 const http = require('http');
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();  
 
-app.use((req, res, next) => {
-    console.log('This always executes!');
-    next();
-});
 
-app.use('/gwk', (req, res, next) => {
-    console.log('In the /gwk middleware');
-    res.send('<h1>Hello /gwk!</h1>');
-//    next(); // Allows the request to continue to the next middleware in line
-});
+const admRoutes = require('./routes/admin');
+const shopRoutes = require('./routes/shop');
 
-app.use('/', (req, res, next) => {
-    console.log('In another middleware');
-    res.send('<h1>Hello from Express!</h1>');
-});
+app.use(bodyParser.urlencoded({extended: false}));
+
+app.use(admRoutes);
+app.use(shopRoutes);
+
 
 const server = http.createServer(app)
 
